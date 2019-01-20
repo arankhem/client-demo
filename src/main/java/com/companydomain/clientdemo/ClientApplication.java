@@ -13,8 +13,6 @@ public class ClientApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(ClientApplication.class, args);
-//		Reciever reciever = applicationContext.getBean(Reciever.class);
-//		reciever.recieve();
 		Client client = applicationContext.getBean(Client.class);
 		client.recieve();
 	}
